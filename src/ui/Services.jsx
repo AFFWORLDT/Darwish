@@ -63,7 +63,7 @@ function BtnBook({ service }) {
 
   return (
     <a
-      href={`https://wa.me/971567503094?text=${encodeURIComponent(message)}`}
+    href={`https://wa.me/+971567599006?text=${encodeURIComponent(message)}`}
       target="_blank"
       className={styles.btnBook}
     >
