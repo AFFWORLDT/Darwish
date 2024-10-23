@@ -23,7 +23,7 @@ function Header({ hasAppScrolled }) {
     >
       <nav className={styles.nav}>
         <Link to="/" onClick={handleNav}>
-          <img className={styles.logo} src="/logo.png" />
+          <img className={styles.logo} src="/Logo_Dubai_.png" />
         </Link>
 
         {browserWidth > 1000 ? (
