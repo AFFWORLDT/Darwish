@@ -1,0 +1,31 @@
+export const SERVICES_LIST = [
+  "Required Services",
+  "General Inquiry",
+  "AC Duct Cleaning & Sanitization",
+  "Annual Maintenance Contracts",
+  "Sofa Cleaning",
+  "Carpet Cleaning",
+  "Curtain Cleaning",
+  "Mattress Cleaning",
+  "Home Sanitization",
+  "Plumbing Services",
+  "Painting Services",
+  "Electric Services",
+  "Handy Man Services",
+  "AC Services",
+  "Water Tank Cleaning",
+  "Pest Control Services",
+  "Mold Remediation",
+  "Deep Cleaning",
+  "Post Construction Cleaning",
+  "Kitchen Exhaust & Hood Cleaning",
+];
+
+export const SOURCES_LIST = [
+  "How Did You Hear About Us",
+  "Google",
+  "From Friends",
+  "Facebook",
+  "Instagram",
+  "An Advertisement",
+];

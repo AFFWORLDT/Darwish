@@ -1,0 +1,87 @@
+.hero {
+  min-height: 110svh;
+  background: url("/images/heroBanner.png") no-repeat;
+  background-size: cover;
+  background-position-x: 50%;
+}
+
+.heroContainer {
+  min-height: 110svh;
+  max-width: 144rem;
+  margin: 0 auto;
+  padding: 12rem 9.6rem 9.6rem;
+
+  display: grid;
+  align-content: center;
+  gap: 2.8rem;
+}
+
+.heroContainer h1 {
+  max-width: 60rem;
+  margin-bottom: 1rem;
+  font-size: 5.6rem;
+}
+
+.subTitle {
+  color: var(--clr-neutral-50);
+  letter-spacing: 4px;
+  word-spacing: 4px;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.heroFeatures {
+  position: relative;
+  left: -1.5rem;
+
+  margin-top: 2.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.4rem 1.2rem;
+}
+
+.featureItem {
+  width: 14rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  align-items: center;
+
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.featureItem > div {
+  width: 11rem;
+  height: 11rem;
+  background-color: var(--clr-neutral-50);
+  border-radius: 1.2rem;
+  box-shadow:
+    inset -1px -12px 20px -9px #949393bd,
+    1px 8px 8px #6a6565c2;
+
+  display: grid;
+  place-items: center;
+}
+
+.featureItem img {
+  width: 55%;
+}
+
+@media screen and (max-width: 1000px) {
+  .heroContainer {
+    padding: 9.6rem 4.8rem;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .heroContainer {
+    padding: 12rem 2.4rem 9.6rem;
+  }
+
+  .heroFeatures {
+    justify-content: center;
+  }
+}

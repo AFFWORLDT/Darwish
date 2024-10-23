@@ -1,0 +1,75 @@
+.ctaBtns {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.ctaBtns * {
+  flex-shrink: 0;
+}
+
+.ctaBtns svg {
+  width: auto;
+  height: 3.4rem;
+}
+
+.btnTelephone,
+.btnWhatsapp {
+  padding: 1.4rem 3.2rem;
+  border-radius: 0.6rem;
+  border: 1px solid transparent;
+
+  font-size: 1.8rem;
+  font-weight: 500;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btnTelephone {
+  border-color: var(--clr-neutral-50);
+}
+
+.btnTelephone svg {
+  fill: var(--clr-primary);
+}
+
+.btnTelephone:hover {
+  border-color: var(--clr-primary);
+  color: var(--clr-neutral-50);
+  background-color: var(--clr-primary) !important;
+}
+
+.btnTelephone:hover svg {
+  fill: #fff;
+}
+
+.btnWhatsapp {
+  color: var(--clr-neutral-50);
+  background-color: #4bb227;
+}
+
+.btnWhatsapp svg {
+  fill: var(--clr-neutral-50);
+}
+
+.btnWhatsapp:hover {
+  border-color: #4bb227;
+  color: #4bb227;
+  background-color: var(--clr-neutral-50);
+}
+
+.btnWhatsapp:hover svg {
+  fill: #4bb227;
+}
+
+@media screen and (max-width: 500px) {
+  .ctaBtns {
+    flex-direction: column !important;
+  }
+
+  .btnTelephone,
+  .btnWhatsapp {
+    justify-content: center;
+  }
+}

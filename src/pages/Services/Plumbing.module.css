@@ -1,0 +1,330 @@
+.plumbingCleaning {
+  background-color: rgb(243, 243, 243);
+}
+
+.plumbingCleaning h1 {
+  margin: 2rem 0 4rem;
+  font-size: 4.5rem;
+}
+
+.plumbing p {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.plumbing {
+  max-width: 144rem;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  padding: 2rem 4rem;
+
+  background-size: cover;
+  flex-wrap: wrap;
+}
+
+.plumbingContent,
+.plumbingCarousel {
+  margin-top: 9rem;
+  flex: 1;
+  min-width: 300px;
+}
+
+.plumbingCounts {
+  display: flex;
+  flex-direction: row;
+  gap: 6.4rem;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  flex-wrap: wrap;
+}
+
+.plumbingrow {
+  margin: 0.5rem;
+}
+
+.plumbingrow h1 {
+  font-size: 4rem;
+  color: darkorange;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.plumbingrow p {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+
+.plumbingCarousel img {
+  width: 100%;
+  height: 70rem;
+  border-radius: 2rem;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.wedoPSection {
+  padding: 4rem 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wedoPContent,
+.worksPContent,
+.chPContent,
+.probContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.wedoPImage,
+.worksPImage,
+.chPImage,
+.probImage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  max-width: 600px;
+}
+
+.wedoPImage img,
+.worksPImage img,
+.chPImage img,
+.probImage img {
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+  border-radius: 1.2rem;
+}
+
+.wedoPText,
+.worksPText,
+.chPText,
+.probText {
+  flex: 1;
+  padding: 0 1rem;
+  max-width: 600px;
+}
+
+.wedoPText h1,
+.worksPText h1,
+.chPText h1,
+.probText h1 {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.wedoPText p,
+.chPText li,
+.probText p {
+  font-size: 2rem;
+  line-height: 1.6;
+}
+.worksPSection,
+.chPSection,
+.probSection {
+  padding: 4rem 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carouselWrapper {
+  width: 100%;
+}
+
+.carouselItem {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.carouselItem h1 {
+  font-size: 2.5rem;
+  color: #ffd500;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.carouselItem h3 {
+  font-size: 3rem;
+  line-height: 1.6;
+  font-weight: bold;
+}
+
+.carouselItem p {
+  font-size: 2rem;
+  line-height: 1.6;
+}
+
+.circleIcon {
+  color: rgb(255, 221, 0);
+  font-size: 2rem;
+  margin-right: 2rem;
+  margin-top: 1rem;
+}
+
+.faq {
+  position: relative;
+  background-color: var(--clr-neutral-200);
+}
+
+.faq > div {
+  padding-bottom: 24rem;
+}
+
+.faq h2 {
+  font-size: 5.6rem;
+  text-wrap: balance;
+  margin-bottom: 4.8rem;
+  text-align: center;
+}
+
+.faqContainer {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.8rem;
+}
+
+.faqItem {
+  font-size: 2rem;
+}
+
+.faqItem:not(:last-of-type) {
+  border: 1px solid var(--clr-neutral-200);
+}
+
+.faqItem .title {
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+  user-select: none;
+  font-weight: 600;
+  padding: 1.8rem 3.2rem;
+  background-color: var(--clr-neutral-50);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.faqItem .title.activeToggle {
+  color: var(--clr-primary);
+}
+
+.faqItem .title span:last-of-type {
+  font-size: 3.2rem;
+  position: absolute;
+  right: 3.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.faqItem .content {
+  padding: 2rem 3.2rem 3.2rem;
+}
+
+@media (max-width: 1024px) {
+  .plumbing {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .plumbing {
+    grid-template-columns: 1fr;
+  }
+
+  .plumbingCarousel {
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .plumbing {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .plumbingContent,
+  .plumbingCarousel {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .plumbingCleaning h1 {
+    font-size: 4rem;
+    margin: 2rem 0;
+  }
+
+  .plumbingrow h1 {
+    font-size: 2.4rem;
+  }
+
+  .plumbingrow p {
+    font-size: 1.6rem;
+  }
+
+  .wedoPContent,
+  .worksPContent,
+  .chPContent,
+  .probContent {
+    flex-direction: column;
+    align-items: center;
+  }
+  .worksPText {
+    max-width: 100%;
+  }
+  .wedoPText,
+  .worksPText,
+  .chPText,
+  .probText {
+    text-align: center;
+  }
+
+  .wedoPText h1,
+  .worksPText h1,
+  .chPText h1,
+  .probText h1 {
+    font-size: 4rem;
+  }
+
+  .faqItem .title,
+  .faqItem .content {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .faqItem .title {
+    text-wrap: balance;
+  }
+}
+
+@media (max-width: 480px) {
+  .wedoPImage img,
+  .worksPImage img,
+  .chPImage img,
+  .probImage img {
+    max-width: 80vw;
+    max-height: 500px;
+  }
+
+  .wedoPSection,
+  .worksPSection,
+  .chPSection,
+  .probSection {
+    padding: 4rem 2.4rem;
+  }
+}

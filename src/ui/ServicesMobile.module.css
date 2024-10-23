@@ -1,0 +1,61 @@
+.servicesMobile {
+  border-bottom: 1px solid rgb(161, 161, 161);
+
+  display: grid;
+  gap: 2.4rem;
+}
+
+.toggleServices {
+  padding: 2rem 1.2rem;
+
+  line-height: 1;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--clr-primary);
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.toggleServices.activeToggle {
+  background-color: var(--clr-primary);
+  color: var(--clr-neutral-50);
+}
+
+.toggleServices img {
+  width: 2rem;
+  transition: 0.3s var(--timing-function);
+}
+
+.toggleServices.activeToggle img {
+  transform: rotate(180deg);
+}
+
+.lists {
+  padding: 0 1.2rem 2.4rem;
+  font-size: 1.8rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.4rem 3.2rem;
+}
+
+.listItem,
+.listItem ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.listItem {
+  gap: 1.2rem;
+}
+
+.listItem ul {
+  gap: 0.8rem;
+}
+
+.listItem .title {
+  font-weight: 600;
+  color: var(--clr-primary);
+}

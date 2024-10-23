@@ -1,0 +1,155 @@
+:root {
+  --ff-heading: "Roboto Serif", serif;
+  --ff-body: "Open Sans", sans-serif;
+
+  --clr-primary: #fbbf25;
+
+  --clr-neutral-50: #fff;
+  --clr-neutral-100: #f7f7f7;
+  --clr-neutral-200: #f2f2f2;
+  --clr-neutral-300: #dedede;
+  --clr-neutral-400: #3e3e3e;
+
+  --timing-function: cubic-bezier(0.46, 0.03, 0.52, 0.96);
+}
+
+/*****************/
+/* Reset default */
+/*****************/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--ff-body);
+  font-size: 1.6rem;
+  overflow-x: hidden;
+  background-color: var(--clr-neutral-50);
+  color: var(--clr-neutral-400);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--ff-heading);
+  font-weight: normal;
+  line-height: 1.4;
+}
+
+p {
+  line-height: 1.6;
+}
+
+input,
+select,
+textarea {
+  background-color: transparent;
+  outline: transparent;
+  border: none;
+  font: inherit;
+  color: inherit;
+}
+
+input:disabled,
+select:disabled,
+textarea:disabled {
+  background-color: var(--clr-neutral-100);
+  cursor: not-allowed;
+}
+
+.menu-hamburger,
+ul,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+a,
+button,
+svg {
+  transition: 0.3s var(--timing-function);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  height: fit-content;
+}
+
+button {
+  background-color: transparent;
+  outline: transparent;
+  border: none;
+  font: inherit;
+  color: inherit;
+  line-height: normal;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: var(--clr-primary-800);
+  cursor: not-allowed;
+}
+
+/*****************/
+/* Global Styles */
+/*****************/
+
+.imgContainer {
+  overflow: hidden;
+}
+
+.imgContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sectionStyles {
+  max-width: 144rem;
+  margin: 0 auto;
+  padding: 12rem 9.6rem;
+}
+
+.slick-track {
+  display: flex;
+  gap: 4rem;
+}
+
+.slick-arrow {
+  display: none !important;
+}
+
+/*****************/
+/* Media Queries */
+/*****************/
+
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 55%;
+  }
+
+  .sectionStyles {
+    padding: 12rem 4.8rem;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .sectionStyles {
+    padding: 9.6rem 2.4rem;
+  }
+}

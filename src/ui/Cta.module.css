@@ -1,0 +1,26 @@
+.cta {
+  position: relative;
+  background: url("/images/interior.jpg") no-repeat;
+  background-size: cover;
+}
+
+.cta > div {
+  padding-top: 24rem;
+  padding-bottom: 48rem;
+
+  display: grid;
+  gap: 4rem;
+}
+
+.cta h2 {
+  font-size: 5.6rem;
+  text-wrap: balance;
+  text-align: center;
+}
+
+.cta p {
+  max-width: 65rem;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.8rem;
+}

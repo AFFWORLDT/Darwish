@@ -1,0 +1,376 @@
+.kitchenCleaning {
+  background-color: rgb(243, 243, 243);
+}
+
+.kitchenCleaning h1 {
+  margin: 2rem 0 4rem;
+  font-size: 4.5rem;
+}
+
+.kitchenClean p {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.kitchenClean {
+  max-width: 144rem;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  padding: 2rem 4rem;
+
+  background-size: cover;
+  flex-wrap: wrap;
+}
+
+.kitchenContent,
+.kitchenCarousel {
+  margin-top: 9rem;
+  flex: 1;
+  min-width: 300px;
+}
+
+.kitchenCounts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  flex-wrap: wrap;
+}
+
+.kitchenrow {
+  flex: 1;
+  margin: 0.5rem;
+}
+
+.kitchenrow h1 {
+  font-size: 4rem;
+  color: darkorange;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.kitchenrow p {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+
+.kitchenCarousel img {
+  width: 100%;
+  height: 70rem;
+  border-radius: 2rem;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.wedoSection {
+  padding: 4rem 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wedoContent,
+.worksContent,
+.chooseContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.wedoImage,
+.worksImage,
+.chooseImage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  max-width: 600px;
+}
+
+.wedoImage img,
+.worksImage img,
+.chooseImage img {
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+  /* Maintain aspect ratio */
+  border-radius: 1.2rem;
+}
+
+.wedoText,
+.worksText,
+.chooseText {
+  flex: 1;
+  padding: 0 1rem;
+  max-width: 600px;
+}
+
+.wedoText h1,
+.worksText h1,
+.chooseText h1 {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.wedoText p,
+.chooseText li {
+  font-size: 2rem;
+  line-height: 1.6;
+}
+
+.worksSection,
+.chooseSection {
+  padding: 4rem 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carouselWrapper {
+  width: 100%;
+}
+
+.carouselItem {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.carouselItem h1 {
+  font-size: 2.5rem;
+  color: #ffd500;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.carouselItem p {
+  font-size: 2rem;
+  line-height: 1.6;
+  font-weight: bold;
+}
+
+.circleIcon {
+  color: rgb(255, 221, 0);
+  font-size: 2rem;
+  margin-right: 2rem;
+  margin-top: 1rem;
+}
+
+.faq {
+  position: relative;
+  background-color: var(--clr-neutral-200);
+}
+
+.faq > div {
+  padding-bottom: 24rem;
+}
+
+.faq h2 {
+  font-size: 5.6rem;
+  text-wrap: balance;
+  margin-bottom: 4.8rem;
+  text-align: center;
+}
+
+.faqContainer {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.8rem;
+}
+
+.faqItem {
+  font-size: 2rem;
+}
+
+.faqItem:not(:last-of-type) {
+  border: 1px solid var(--clr-neutral-200);
+}
+
+.faqItem .title {
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+  user-select: none;
+  font-weight: 600;
+  padding: 1.8rem 3.2rem;
+  background-color: var(--clr-neutral-50);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.faqItem .title.activeToggle {
+  color: var(--clr-primary);
+}
+
+.faqItem .title span:last-of-type {
+  font-size: 3.2rem;
+  position: absolute;
+  right: 3.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.faqItem .content {
+  padding: 2rem 3.2rem 3.2rem;
+}
+
+@media (max-width: 1024px) {
+  .kitchenCleaning h1 {
+    margin: 5rem auto 2rem;
+  }
+
+  .wedoSection {
+    padding: 2rem 4rem;
+  }
+
+  .wedoText h1 {
+    font-size: 3rem;
+  }
+
+  .wedoText p {
+    font-size: 1.6rem;
+  }
+
+  .worksSection {
+    padding: 2rem 4rem;
+  }
+
+  .worksText h1 {
+    font-size: 3rem;
+  }
+
+  .carouselItem h1 {
+    font-size: 2rem;
+  }
+
+  .carouselItem p {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .kitchenClean {
+    grid-template-columns: 1fr;
+  }
+
+  .kitchenCounts,
+  .kitchenCarousel {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .wedoSection,
+  .worksSection,
+  .chooseSection {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
+
+  .kitchenClean {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .kitchenContent,
+  .kitchenCarousel {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .kitchenCleaning h1 {
+    margin: 2rem 0;
+  }
+
+  .wedoContent,
+  .qualityContent,
+  .chooseContent {
+    flex-direction: column;
+    align-items: center;
+  }
+  .worksText {
+    max-width: 100%;
+  }
+  .wedoText,
+  .qualityText,
+  .chooseText {
+    text-align: center;
+  }
+
+  .worksContent {
+    flex-direction: column;
+  }
+
+  .carouselItem {
+    text-align: left;
+    max-width: 200px;
+  }
+
+  .faqItem .title,
+  .faqItem .content {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .faqItem .title {
+    text-wrap: balance;
+  }
+}
+
+@media (max-width: 480px) {
+  .kitchenClean {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
+
+  .kitchenCleaning h1 {
+    margin: 2rem auto 1rem;
+  }
+
+  .wedoImage img,
+  .qualityImage img,
+  .chooseImage img {
+    max-width: 300px;
+    max-height: 300px;
+  }
+
+  .worksSection {
+    padding: 1rem 2rem;
+  }
+
+  .worksImage img {
+    max-width: 280px;
+  }
+
+  .carouselItem {
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+
+  .carouselItem h1 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .carouselItem p {
+    line-height: 1.4;
+  }
+
+  .carouselWrapper {
+    padding: 0 1rem;
+  }
+}
